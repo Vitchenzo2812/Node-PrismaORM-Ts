@@ -8,5 +8,3 @@ app.use(express.json());
 app.use(routes);
 
 app.listen(8080, () => console.log("API Running"));
-
-// VIDEO 1:05:35

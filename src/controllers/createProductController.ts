@@ -1,4 +1,4 @@
-import prismaClient from '../database/prismaClient';
+import { prismaClient } from '../database/prismaClient';
 import { Request, Response } from 'express';
 
 export class createProductController {
@@ -8,8 +8,8 @@ export class createProductController {
         
         const product = await prismaClient.product.create({
             data: {
-                bar_code,
                 name,
+                bar_code,
                 price
             }
         });
